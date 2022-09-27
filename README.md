@@ -1,2 +1,3 @@
-# calendar_plugin
- Create Calender Plugin for Business on WordPress
+# 使用方法
+ カレンダーを表示したい箇所に、ショートコード[custom-calendar]を挿入してください  
+ カレンダーの設定は「WPダッシュボード→ツール→カレンダー設定」から設定可能です
