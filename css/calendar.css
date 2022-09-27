@@ -1,0 +1,91 @@
+@charset 'utf-8';
+
+/* カレンダー */
+.calendar-wrap{
+    margin: 50px auto 0;
+    max-width: 980px;
+    width: 100%;
+}
+.calendar-wrap table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+.calendar-wrap table th,
+.calendar-wrap table td{
+    border: 1px solid #aaa;
+    font-size: 13px;
+}
+.calendar-wrap table th{
+    background-color: #1d2327;
+    color: #fff;
+    padding: 8px 0;
+    width: calc(100%/7);
+    text-align: center;
+}
+.calendar-wrap table td{
+    padding: 10px;
+    height: 100px;
+    background-color: #fff;
+    vertical-align: top;
+}
+.calendar-wrap table td.temp-day{
+    background-color: #fff !important;
+    color: #1d2327 !important;
+}
+.calendar-wrap table td.holiday-week.today,
+.calendar-wrap table td.holiday-week,
+.calendar-wrap table td.holiday,
+.calendar-wrap table td.holiday.today{
+    background-color: #f37171;
+    color: #fff;
+}
+.calendar-wrap table td.holiday .title{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.calendar-wrap table td.disabled{
+    background-color: #dcdcdc;
+}
+.calendar-wrap table td.disabled.holiday-week{
+    color: #1d2327;
+}
+.calendar-wrap table td.today{
+    background-color: #fffec4;
+}
+.calendar-wrap table td.today span{
+    font-weight: bold;
+}
+.calendar-wrap .cal-header{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.calendar-wrap .cal-header-text{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.calendar-wrap .cal-header button{
+    border: none;
+    box-shadow: none;
+    background-color: #1d2327;
+    -webkit-appearance: none;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #1d2327;
+    padding: 5px 15px;
+    transition: .2s;
+    font-size: 13px;
+    text-decoration: none;
+}
+.calendar-wrap .cal-header button:hover{
+    background-color: transparent;
+    color: #1d2327;
+}
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide){
+    max-width: 1200px !important;
+    width: 100% !important;
+}

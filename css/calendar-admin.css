@@ -1,0 +1,99 @@
+@charset 'utf-8';
+
+
+/* SETTINGS */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.add-btn{
+    color: #1d2327;
+    border: 1px solid #1d2327;
+}
+.save-btn input{
+    color: #fff;
+    background-color: #1d2327;
+    border: 1px solid #1d2327;
+}
+.add-btn,
+.save-btn input{
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 3px;
+    transition: .2s;
+}
+.add-btn:hover{
+    background-color: #fff;
+}
+.save-btn input:hover{
+    background-color: transparent;
+    color: #1d2327;
+}
+.settings-wrap h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.settings-wrap .box{
+    margin-bottom: 30px;
+}
+.settings-wrap .text{
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.settings-wrap .text small{
+    font-weight: normal;
+}
+.settings-wrap .select-box .flex{
+    align-items: flex-end;
+}
+.settings-wrap .select-box .flex .delete-btn,
+.settings-wrap .box .item .delete-btn{
+    margin: 0 0 0 10px;
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+}
+.settings-wrap .flex-box.con-r{
+    margin-left: 50px;
+}
+.settings-wrap .flex-box.con-r .box{
+    max-width: 590px;
+}
+.settings-wrap .flex-box.con-r .box input[type="date"]{
+    margin-right: 10px;
+}
+.settings-wrap .box input[type="checkbox"]{
+    margin-right: 5px;
+}
+.settings-wrap .box input[type="file"]{
+    margin-top: 10px;
+}
+.settings-wrap .box label{
+    margin-right: 10px;
+}
+.settings-wrap .box .item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.calendar-wrap table td{
+    height: 50px !important;
+}
+.settings-wrap .box .select-box{
+    margin-top: 15px;
+}
+.settings-wrap .box .select-box .flex{
+    margin-bottom: 8px;
+}
+.settings-wrap .box .select-box .flex .num-select{
+    margin-right: 5px;
+}
+.error{
+    color: red;
+}
+.success{
+    color: blue;
+}
