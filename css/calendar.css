@@ -89,3 +89,57 @@
     max-width: 1200px !important;
     width: 100% !important;
 }
+
+@media screen and (max-width: 991px){
+    .calendar-wrap table td.holiday .title,
+    .calendar-wrap table td .title{
+        margin-left: 0;
+        display: block;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .calendar-wrap table td{
+        padding: 5px;
+        height: 10vw;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .calendar-wrap .cal-header button{
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+    .calendar-wrap .cal-header-text{
+        font-size: 16px;
+    }
+    .calendar-wrap table th{
+        font-size: 12px;
+        padding: 5px 0;
+    }
+    .calendar-wrap table td{
+        font-size: 11px;
+    }
+    .calendar-wrap table td.holiday .title{
+        font-size: 11px;
+    }
+    .calendar-wrap table td .title{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 70px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .calendar-wrap table td .title{
+        max-width: 40px;
+    }
+    .calendar-wrap table td{
+        padding: 3px 4px;
+        font-size: 10px;
+    }
+    .calendar-wrap table td.holiday .title,
+    .calendar-wrap table td .title{
+        margin-top: 0;
+    }
+}
